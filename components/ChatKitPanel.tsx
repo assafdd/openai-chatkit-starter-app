@@ -8,6 +8,7 @@ import {
   GREETING,
   CREATE_SESSION_ENDPOINT,
   WORKFLOW_ID,
+  CHATKIT_CONFIG,
   getThemeConfig,
 } from "@/lib/config";
 import { ErrorOverlay } from "./ErrorOverlay";
@@ -195,7 +196,7 @@ export function ChatKitPanel({
             chatkit_configuration: {
               // enable attachments
               file_upload: {
-                enabled: true,
+                enabled: CHATKIT_CONFIG.file_upload_enabled,
               },
             },
           }),

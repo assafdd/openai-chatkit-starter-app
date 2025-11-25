@@ -17,6 +17,11 @@ export const PLACEHOLDER_INPUT = "Ask anything...";
 
 export const GREETING = "How can I help you today?";
 
+// ChatKit UI Configuration
+export const CHATKIT_CONFIG = {
+  file_upload_enabled: true, // Enable file uploads
+};
+
 export const getThemeConfig = (theme: ColorScheme): ThemeOption => ({
   color: {
     grayscale: {
